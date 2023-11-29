@@ -420,7 +420,23 @@ body {
   font-size: 1.6rem;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 15px;
+  max-height: 500px; /* Mengatur tinggi maksimum untuk semua portfolio-card */
+}
+
+.card-content {
+  flex-grow: 1; /* Konten akan mengambil sisa tinggi untuk mengisi kartu secara penuh */
+  overflow-y: auto;
+}
 
 
 
@@ -879,15 +895,15 @@ textarea.contact-input {
   .elem-2 .elem-title { color: var(--fiery-rose); }
 
   .elem-title {
-    font-size: 4.5rem;
-    line-height: 1.1;
+    font-size: 3.2rem;
+    line-height: 0.9;
   }
 
   .elem-text {
     max-width: 10ch;
     color: var(--black);
     font-weight: var(--fw-700);
-    line-height: 1.1;
+    line-height: 1.0;
   }
 
   .elem-3 {
@@ -942,7 +958,7 @@ textarea.contact-input {
   .abs-icon-1 {
     top: 50px;
     left: -120px;
-    background-color: var(--bluetiful);
+    background-color: var(--orange-soda);
   }
 
   .abs-icon-2 {
@@ -954,7 +970,7 @@ textarea.contact-input {
   .abs-icon-3 {
     bottom: -40px;
     left: 250px;
-    background-color: var(--rufous);
+    background-color: var(--bluetiful);
   }
 
 
